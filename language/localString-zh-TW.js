@@ -3,8 +3,8 @@
  * 張睿玹版權所有
  * https://github.com/dwcoop/AIRpollution/license.html
  * 文件: localString-zh-TW.js(前端)
- * 版本: V1.0.0-TW
- * 日期: 2019-06-07T15:54Z
+ * 版本: V1.0.1-TW
+ * 日期: 2019-06-08T15:27Z
  */
 window.AIRpollution_localStringData = {
   "SiteName": "區域名稱",

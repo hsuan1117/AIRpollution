@@ -2,8 +2,8 @@
  * AIRpollution 空氣汙染外掛 
  * 張睿玹版權所有
  * https://github.com/dwcoop/AIRpollution/license.html
- * 版本: V1.0.0-TW
- * 日期: 2019-06-07T15:54Z
+ * 版本: V1.0.1-TW
+ * 日期: 2019-06-08T15:27Z
  */
 //prevent undefined functions
 $.getScript("https://polyfill.io/v3/polyfill.min.js?features=es5,es6,es7&flags=gated")
