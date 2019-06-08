@@ -1,0 +1,40 @@
+<!--
+ *
+ * AIRpollution 空氣汙染外掛 
+ * 張睿玹版權所有
+ * https://github.com/dwcoop/AIRpollution/license.html
+ * 文件: AIRpollution.html(前端)
+ * 版本: V1.0.0-TW
+ * 日期: 2019-06-08T14:19Z
+ *
+-->
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<!-- jQuery -->
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<script src="AIRpollution.js"></script>
+	</head>
+
+	<body>
+		<div id="AIRpollution_Container"></div>
+		<div id="AIRpollution_Output"></div>
+		<button id="AIRpollution_Retry" onclick="AIRpollution_SetData(window.AIRpollution_Data)">重試</button>
+	</body>
+
+	<style>
+		button {
+			background-color: #4CAF50;
+			/* Green */
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+		}
+	</style>
+
+</html>
