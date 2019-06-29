@@ -3,15 +3,16 @@
  * 張睿玹版權所有
  * https://github.com/dwcoop/GoogleAppScript_Uploader/license.html
  * 文件: Github Uploader.gs(後端)
- * 版本: V1.0.0
- * 日期: 2019-06-07T15:54Z
+ * 版本: V1.0.1
+ * 日期: 2019-06-29T22:54Z
  */
 function GithubUploader(data, settings) {
 	function getSHA(settings) {
 		var endpoint = (
 				"https://api.github.com/repos/" +
 				settings.repoOwner + "/" + settings.repoName + "/contents/" +
-				encodeURIComponent(settings.uploadPath + settings.fileName)
+				encodeURIComponent(settings.uploadPath + settings.fileName) +
+				"?ref=" + settings.branch
 			),
 			sha;
 
@@ -27,7 +28,8 @@ function GithubUploader(data, settings) {
 	var endpoint = (
 			"https://api.github.com/repos/" +
 			settings.repoOwner + "/" + settings.repoName + "/contents/" +
-			encodeURIComponent(settings.uploadPath + settings.fileName)
+			encodeURIComponent(settings.uploadPath + settings.fileName) +
+			"?ref=" + settings.branch
 		),
 		fetchResult;
 
