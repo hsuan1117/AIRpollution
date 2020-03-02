@@ -62,7 +62,7 @@ $(function () {
   $.ajax({
     type: "get",
     async: false,
-    url: "https://cdn.jsdelivr.net/gh/dwcoop/AIRpollution/AIRpollution-data_zh-TW.js",
+    url: "https://cdn.jsdelivr.net/gh/dwcoop/AIRpollution/AIRpollution-data_zh-TW.js?t="+Date.now(),
     dataType: "jsonp",
     jsonpCallback: 'AIRpollution_serverCallback',
     success: function (data) {
